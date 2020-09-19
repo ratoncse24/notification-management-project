@@ -19,7 +19,7 @@ services:
       - notification
 
   api:
-    image: notification-backend:latest
+    image: raton/notification-backend:latest
     restart: always
     # volumes:
       # - ./notification-backend:/usr/src/app
@@ -32,7 +32,7 @@ services:
       - notification
 
   web: 
-    image: notification-frontend:latest
+    image: raton/notification-frontend:latest
     restart: always
     ports:
       - 8001:8001
